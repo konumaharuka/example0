@@ -1,0 +1,55 @@
+\documentclass{jarticle}
+
+% プリアンブル
+\title{練習用}
+\author{小沼悠}
+\date{\today}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+  % タイトルを出力
+  \maketitle
+
+\section{自己紹介}
+\subsection{氏名}
+小沼　悠
+\subsection{生年月日}
+2000/01/24
+\section{画像を張る}
+% 図の挿入
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=50mm]{pompom11}
+\caption{ポムポムプリンとマフィン}
+\end{center}
+\end{figure}
+\begin{tabular}{l}
+\\
+\\
+\\
+\end{tabular}
+\section {表を作成する}
+%表の挿入
+\begin{table}[h]
+%\label{table:data_type}
+\begin{flushleft}
+  \begin{tabular}{|l|c|r|r|}
+    メニュー & サイズ & 値段 & カロリー \\
+    牛丼 & 並盛 & 500円 & 600 kcal \\
+    牛丼 & 大盛 & 1,000円 & 800 kcal \\
+    牛丼 & 特盛 & 1,500円 & 1,000 kcal \\
+    牛皿 & 並盛 & 300円 & 250 kcal \\
+    牛皿 & 大盛 & 700円 & 300 kcal \\
+    牛皿 & 特盛 & 1,000円 & 350 kcal\\
+  \end{tabular}
+\caption{牛丼表}
+\end{flushleft}
+\end{table}
+
+\section {参考文献を入れる}
+\begin{thebibliography}{9}
+\bibitem{Hyoukuminokihon}http://www.latex\_cmd.com/fig\_tab/table01.html(表組みの基本‐LaTeXコマンド集)
+\bibitem{Texnyuumon}https://www.comp.tmu.ac.jp/tsakai/lectures/intro-tex.html\#article(Tex入門)
+\end{thebibliography}
+
+\end{document}
